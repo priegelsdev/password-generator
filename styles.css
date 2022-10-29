@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  left: 62px;
+  top: 64px;
+
+  background: #1F2937;
+}
+
+.output p {
+  background-color: white;
+  width: 150px;
+  height: 50px;
+}
