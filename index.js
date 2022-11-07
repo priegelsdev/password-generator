@@ -6,17 +6,14 @@ let randomNum;
 let randomChar;
 let password = "";
 
-//TO DO: FIX bug where <p> doesn't display all characters 
-
 function generatePassword() {
   for (let i = 0; i < 15; i++) {
     randomNum = Math.floor(Math.random() * characters.length);
     randomChar = characters[randomNum];
     password += randomChar;
     console.log(password);
-    console.logtypeof(password);
   }
-  output1.innerHTML = password;
+  output1.innerText = password;
   password = "";
 
   for (let j = 0; j < 15; j++) {
@@ -24,6 +21,6 @@ function generatePassword() {
     randomChar = characters[randomNum];
     password += randomChar;
   }
-  output2.innerHTML = password;
+  output2.innerText = password;
   password = "";
 }
