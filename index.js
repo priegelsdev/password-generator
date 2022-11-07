@@ -6,17 +6,21 @@ let randomNum;
 let randomChar;
 let password = "";
 
+let value;
+
+
 function generatePassword() {
-  for (let i = 0; i < 15; i++) {
+  value = document.getElementById("pw-length").value;
+
+  for (let i = 0; i < value; i++) {
     randomNum = Math.floor(Math.random() * characters.length);
     randomChar = characters[randomNum];
     password += randomChar;
-    console.log(password);
   }
   output1.innerText = password;
   password = "";
 
-  for (let j = 0; j < 15; j++) {
+  for (let j = 0; j < value; j++) {
     randomNum = Math.floor(Math.random() * characters.length);
     randomChar = characters[randomNum];
     password += randomChar;
